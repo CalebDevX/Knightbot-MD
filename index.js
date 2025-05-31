@@ -80,10 +80,10 @@ const store = {
     }
 }
 
-let phoneNumber = "911234567890"
+let phoneNumber = "2348096567473"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "KNIGHT BOT"
+global.botname = "K4l3b"
 global.themeemoji = "•"
 
 const settings = require('./settings')
@@ -220,8 +220,8 @@ async function startXeonBotInc() {
         phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
         // Ensure number starts with country code
-        if (!phoneNumber.startsWith('62') && !phoneNumber.startsWith('91')) {
-            phoneNumber = '62' + phoneNumber // Default to Indonesia if no country code
+        if (!phoneNumber.startsWith('234') && !phoneNumber.startsWith('91')) {
+            phoneNumber = '234' + phoneNumber // Default to Indonesia if no country code
         }
 
         setTimeout(async () => {
